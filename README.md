@@ -10,7 +10,10 @@ Jenkins is going to start and is already connected to the docker-demo organizati
 
 ```bash
 git clone https://github.com/docker-demo/jenkins.git
-chmod o+x set-ownership
 ./set-ownership
 docker-compose -d up
+```
+
+```bash
+docker run -v "$(pwd)/python:/scripts" python
 ```
