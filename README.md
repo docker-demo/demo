@@ -14,6 +14,8 @@ git clone https://github.com/docker-demo/jenkins.git
 docker-compose -d up
 ```
 
+# Run A python script
+
 ```bash
-docker run -v "$(pwd)/python:/scripts" python
+docker run --rm -it -v "$(pwd)"/python:/scripts python python /scripts/hello.py
 ```
