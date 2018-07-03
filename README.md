@@ -17,5 +17,5 @@ docker-compose -d up
 # Run A python script
 
 ```bash
-docker run --rm -it -v "$(pwd)"/python:/scripts python python /scripts/hello.py
+docker run --rm -it -v "$(pwd)"/scripts:/scripts python python /scripts/hello.py
 ```
